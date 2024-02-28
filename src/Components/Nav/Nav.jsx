@@ -4,9 +4,19 @@ import React from "react";
 function Nav() {
   return (
     <>
-      <h1>Devin Altobello</h1>
-      <h2>Software Engineer</h2>
-      <a href="mailto:dl.altobello@gmail.com" class="email">dl.altobello@gmail.com</a>
+      <ul>
+        <li className="list-items">
+          <a href='https://experience-exchange.vercel.app/'>
+            Experience Exchange
+          </a>
+        </li>
+        <li className="list-items">
+          <a href='https://word-atlas.vercel.app/'>Word Atlas</a>
+        </li>
+        <li className="list-items">
+          <a href="https://stretch-tech-theta.vercel.app/">MET Gallery</a>
+        </li>
+      </ul>
     </>
   );
 }
