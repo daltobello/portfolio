@@ -1,17 +1,28 @@
-import { useState } from "react";
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import { useState } from "react";
 import Nav from "../Nav/Nav";
 import Header from "../Header/Header";
 import SelectedWork from "../SelectedWork/SelectedWork";
+import About from "../About/About";
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
-    <main className="main">
-        <Header />
-        <SelectedWork />
-        <Nav />
+    <main className='main'>
+      <Routes>
+        <Route
+          path='/'
+          element={
+            <>
+              <Header />
+              <SelectedWork />
+              <Nav />
+            </>
+          }
+        />
+        <Route path='/about' element={<About />} />
+      </Routes>
     </main>
   );
 }
