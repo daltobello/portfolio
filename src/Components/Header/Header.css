@@ -1,0 +1,8 @@
+.header-wrapper {
+  align-items: center;
+  display: flex;
+  flex: 0 1 auto;
+  flex-flow: wrap;
+  height: 100%;
+  width: 100%;
+}
