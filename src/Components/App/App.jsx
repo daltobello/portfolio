@@ -1,19 +1,19 @@
-import { useState } from 'react'
-import './App.css'
-import Nav from '../Nav/Nav'
-import Header from '../Header/Header'
+import { useState } from "react";
+import "./App.css";
+import Nav from "../Nav/Nav";
+import Header from "../Header/Header";
+import SelectedWork from "../SelectedWork/SelectedWork";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <>
-    <div className='layout-wrapper'>
-      <Header />
-      <Nav />
-    </div>
-    </>
-  )
+    <main className="main">
+        <Header />
+        <SelectedWork />
+        <Nav />
+    </main>
+  );
 }
 
-export default App
+export default App;
