@@ -1,23 +1,14 @@
 import "./Nav.css";
 import React from "react";
+import { NavLink, useMatch } from "react-router-dom";
 
 function Nav() {
+  const aboutMatch = useMatch("/about")
   return (
-    <>
-      <ul>
-        <li className="list-items">
-          <a href='https://experience-exchange.vercel.app/'>
-            Experience Exchange
-          </a>
-        </li>
-        <li className="list-items">
-          <a href='https://word-atlas.vercel.app/'>Word Atlas</a>
-        </li>
-        <li className="list-items">
-          <a href="https://stretch-tech-theta.vercel.app/">MET Gallery</a>
-        </li>
-      </ul>
-    </>
+    <nav className="nav-wrapper">
+      { aboutMatch && <NavLink to={'/'}>Home</NavLink>}
+      <NavLink to={'/about'}>About</NavLink>
+    </nav>
   );
 }
 

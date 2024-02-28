@@ -1,0 +1,16 @@
+.works-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.works-list {
+  padding-left: 30px;
+  margin-bottom: 75px;
+}
+
+.works {
+  display: inline-flex;
+  margin: 0px 0px 2px;
+  position: relative;
+  width: 100%;
+}
