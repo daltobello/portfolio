@@ -5,8 +5,11 @@ import Nav from "../Nav/Nav";
 import Header from "../Header/Header";
 import SelectedWork from "../SelectedWork/SelectedWork";
 import About from "../About/About";
+import projectData from "../../ProjectData/ProjectData";
 
 function App() {
+
+  const [works, setWorks] = useState(projectData)
 
   return (
     <main className='main'>
@@ -16,7 +19,7 @@ function App() {
           element={
             <>
               <Header />
-              <SelectedWork />
+              <SelectedWork works={works}/>
               <Nav />
             </>
           }
