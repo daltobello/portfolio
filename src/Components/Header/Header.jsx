@@ -7,7 +7,7 @@ function Header() {
       <div className='header'>
         <h1 className='name'>Devin Altobello</h1>
         <h2 className='title'>Software Engineer</h2>
-        <a className='email' href='mailto:dl.altobello@gmail.com' class='email'>
+        <a className='email' href='mailto:dl.altobello@gmail.com'>
           dl.altobello@gmail.com
         </a>
       </div>
