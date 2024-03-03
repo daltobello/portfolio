@@ -13,6 +13,7 @@ function App() {
 
   return (
     <main className='main'>
+      <div className="layout-wrapper">
       <Routes>
         <Route
           path='/'
@@ -26,6 +27,7 @@ function App() {
         />
         <Route path='/about' element={<About />} />
       </Routes>
+      </div>
     </main>
   );
 }
