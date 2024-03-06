@@ -2,6 +2,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import Nav from "../Nav/Nav";
+import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import SelectedWork from "../SelectedWork/SelectedWork";
 import About from "../About/About";
@@ -19,9 +20,10 @@ function App() {
           path='/'
           element={
             <>
-              <Header />
-              <SelectedWork works={works}/>
-              <Nav />
+              <Header className="header-wrapper"/>
+              <SelectedWork works={works} className="works-wrapper" />
+              <Nav className="nav-wrapper"/>
+              <Footer className="footer" />
             </>
           }
         />
