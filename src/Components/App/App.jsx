@@ -13,8 +13,7 @@ function App() {
   const [works, setWorks] = useState(projectData)
 
   return (
-    <main className='main'>
-      <div className="layout-wrapper">
+      <main className="layout-wrapper">
       <Routes>
         <Route
           path='/'
@@ -22,15 +21,14 @@ function App() {
             <>
               <Header className="header-wrapper"/>
               <SelectedWork works={works} className="works-wrapper" />
-              <Nav className="nav-wrapper"/>
+              {/* <Nav className="nav-wrapper"/> */}
               <Footer className="footer" />
             </>
           }
         />
-        <Route path='/about' element={<About />} />
+        {/* <Route path='/about' element={<About />} /> */}
       </Routes>
-      </div>
-    </main>
+      </main>
   );
 }
 
