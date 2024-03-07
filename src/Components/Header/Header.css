@@ -1,14 +1,33 @@
 .header-wrapper {
+  -webkit-box-align: center;
+  align-items: center;
   display: flex;
-  align-items: end;
+  flex: 0 1 auto;
+  flex-flow: wrap;
   height: 100%;
-  padding-left: 30px;
+  margin-bottom: 0px;
+  padding: 0px;
+  width: 100%;
 }
+
+.name-wrapper {
+  flex-basis: calc(62.5%);
+  max-width: calc(62.5%);
+  margin-top: 0px;
+}
+
 
 .name {
   font-weight: 400;
   font-size: 1.8rem;
   margin: 0%;
+}
+
+.header {
+  flex-basis: initial;
+  max-width: initial;
+  margin-left: auto;
+  width: fit-content;
 }
 
 .title {
@@ -21,4 +40,10 @@
   font-weight: 400;
   font-size: 1rem;
   margin: 0%;
+}
+
+@media screen and (max-width: 40em) {
+  .header {
+    flex-basis: 100%;
+  }
 }
