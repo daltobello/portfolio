@@ -1,5 +1,23 @@
+@font-face {
+  font-family: 'Apercu';
+  src: url('/src/Fonts/apercu-regular.woff2') format('woff2'),
+        url('/src/Fonts/apercu-bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --headings-primary-font: "Apercu", sans-serif;
+  --headings-primary-font-style: normal;
+  --headings-primary-size: 3.2em;
+  --body-primary-font: "Apercu", sans-serif;
+  --body-primary-size: 3.2em;
+}
+
+
 body {
   margin: 0;
+  background-color: rgba(17, 17, 18, 0.881);
 }
 
 .layout-wrapper {
