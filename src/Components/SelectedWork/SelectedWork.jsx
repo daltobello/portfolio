@@ -14,7 +14,8 @@ function SelectedWork({ works }) {
 
   return (
       <div className='works-wrapper'>
-        <ul className='works-list'>Selected Works {workElements}
+        <h2 className="selected-works">Selected Works</h2>
+        <ul className='works-list'>{workElements}
         </ul>
       </div>
   );

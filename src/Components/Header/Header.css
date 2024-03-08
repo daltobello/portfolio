@@ -18,9 +18,10 @@
 
 
 .name {
-  font-weight: 400;
-  font-size: 1.8rem;
   margin: 0%;
+  width: 100%;
+  font-family: var(--headings-primary-font);
+  font-size: 2rem;
 }
 
 .header {
@@ -31,12 +32,13 @@
 }
 
 .title {
-  font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.4rem;
   margin: 0%;
+  font-family: var(--headings-primary-font);
 }
 
 .email {
+  font-family: var(--headings-primary-font);
   font-weight: 400;
   font-size: 1rem;
   margin: 0%;
@@ -45,5 +47,17 @@
 @media screen and (max-width: 40em) {
   .header {
     flex-basis: 100%;
+  }
+
+  .name {
+    font-size: 1.5em;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .selected-works {
+    font-size: 1em;
   }
 }
