@@ -19,10 +19,16 @@
   list-style: none;
 }
 
+.works {
+  display: block; 
+  margin: 0px 0px 3px; 
+}
+
 .works-links {
   text-decoration: none;
   position: relative;
   display: block;
+  color: #ffff;
 }
 
 .works-links::before {
@@ -40,7 +46,3 @@
   width: 100%; 
 }
 
-.works {
-  display: block; 
-  margin: 0px 0px 5px; 
-}
