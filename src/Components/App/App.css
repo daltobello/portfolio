@@ -6,11 +6,30 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'ABCDiatype-regular';
+  src: url('/src/Fonts/ABCDiatype-Regular-Trial.woff2') format('woff2'),
+        url('/src/Fonts/ABCDiatype-RegularItalic-Trial.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ABCDiatype-medium';
+  src: url('/src/Fonts/ABCDiatype-Medium-Trial.woff2') format('woff2'),
+        url('/src/Fonts/ABCDiatype-MediumItalic-Trial.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
 :root {
-  --headings-primary-font: "Apercu", sans-serif;
+  --headings-primary-font: "ABCDiatype-regular", sans-serif;
   --headings-primary-font-style: normal;
   --headings-primary-size: 3.2em;
-  --body-primary-font: "Apercu", sans-serif;
+  --body-primary-font: "ABCDiatype", sans-serif;
   --body-primary-size: 3.2em;
 }
 
