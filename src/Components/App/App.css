@@ -42,8 +42,8 @@ body {
 .layout-wrapper {
     display: grid;
     height: 100vh;
-    width: calc(100vw - 100px);  
-    padding: 0 50px;
+    width: calc(100vw - 40px);  
+    padding: 0 20px;
     grid-template-columns: 1fr;
     grid-template-rows: 15% 50% 5% 30%;
     grid-template-areas: 
