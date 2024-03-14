@@ -2,6 +2,8 @@ import "./SelectedWork.css";
 import React from "react";
 
 function SelectedWork({ works }) {
+  
+
   const workElements = works.map((work) => {
     return (
       <li className='works' key={work.id}>
@@ -14,9 +16,8 @@ function SelectedWork({ works }) {
 
   return (
       <div className='works-wrapper'>
-        <h2 className="selected-works">Selected Works</h2>
-        <ul className='works-list'>{workElements}
-        </ul>
+        <h2 className="selected-works">Selected Projects</h2>
+        <ul className='works-list'>{workElements}</ul>
       </div>
   );
 }
