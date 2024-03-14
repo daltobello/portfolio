@@ -4,8 +4,7 @@
   display: flex;
   flex: 0 1 auto;
   flex-flow: wrap;
-  height: 100%;
-  margin-bottom: 0px;
+  margin-top: 45px;
   padding: 0px;
   width: 100%;
 }
@@ -21,6 +20,7 @@
   margin: 0%;
   width: 100%;
   font-family: var(--headings-primary-font);
+  color: var(--headings-primary-font-color);
   font-size: 2rem;
 }
 
@@ -35,14 +35,15 @@
   font-size: 1.4rem;
   margin: 0%;
   font-family: var(--headings-primary-font);
+  color: var(--headings-primary-font-color);
 }
 
 .email {
   font-family: var(--headings-primary-font);
+  color: var(--headings-secondary-font-color);
   font-weight: 400;
   font-size: 1rem;
   margin: 0%;
-  color: #ffff;
   text-decoration: none;
   position: relative;
 }
@@ -54,7 +55,7 @@
   left: 0;
   width: 0; 
   height: 1px; 
-  background-color: rgb(255, 255, 255); 
+  background-color: rgb(0, 0, 0); 
   transition: width 0.4s;
 }
 
