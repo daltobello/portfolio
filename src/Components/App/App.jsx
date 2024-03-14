@@ -21,7 +21,6 @@ function App() {
             <>
               <Header className="header-wrapper"/>
               <SelectedWork works={works} className="works-wrapper" />
-              {/* <Nav className="nav-wrapper"/> */}
               <Footer className="footer" />
             </>
           }

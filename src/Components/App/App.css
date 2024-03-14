@@ -22,12 +22,11 @@
   font-style: normal;
 }
 
-
-
-
 :root {
   --headings-primary-font: "ABCDiatype-regular", sans-serif;
+  --headings-primary-font-color: #2C3B32;
   --headings-primary-font-style: normal;
+  --headings-secondary-font-color: #2C3B32;
   --headings-primary-size: 3.2em;
   --body-primary-font: "ABCDiatype", sans-serif;
   --body-primary-size: 3.2em;
@@ -36,51 +35,34 @@
 
 body {
   margin: 0;
-  background-color: rgba(17, 17, 18, 0.881);
+  /* background-color: rgba(17, 17, 18, 0.881); */
+  background-color: #EFEDDA;
 }
 
 .layout-wrapper {
-    display: grid;
-    height: 100vh;
-    width: calc(100vw - 100px);  
-    padding: 0 50px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 15% 50% 5% 30%;
-    grid-template-areas: 
-      "header-wrapper"
-      "works-wrapper"
-      "nav-wrapper"
-      "footer";
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: calc(100vw - 40px);
+  padding: 0 20px;
 }
 
 .header-wrapper,
 .works-wrapper,
 .nav-wrapper,
 .footer {
-  height: 100%;
+  flex: 1;
 }
 
-.header-wrapper {
-  grid-area: header-wrapper;
-  /* background-color: rgb(71, 169, 255); */
+/* .header-wrapper {
+  background-color: rgb(71, 169, 255);
 }
 
 .works-wrapper {
-  grid-area: works-wrapper;
-  /* background-color: aqua; */
+  background-color: aqua;
 }
 
-.nav-wrapper {
-  grid-area: nav-wrapper;
-  /* background-color: beige; */
-}
 
 .footer {
-  grid-area: footer;
-  /* background-color: yellow; */
-}
-
-
-
-
-
+  background-color: yellow;
+} */
